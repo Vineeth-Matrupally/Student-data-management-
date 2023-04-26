@@ -1,15 +1,22 @@
---
+--SELECT * FROM students;
+
+SELECT * FROM courses;
+
+SELECT * FROM instructors;
+
+SELECT * FROM enrollments;
+
 --Dumping data for table Student
 --
 
-INSERT INTO Student (Student id, name, Phone, age, address), VALUES ( 1233, ‘poojeetha’, ‘9640525427’, 23, ‘{hyderabad, karmanghat}’ ), (1234, ‘ vineeth’,  ‘9640527893’,  25, ‘{hyderabad, madinaguda}’), (3122, ‘matrupally’,  ‘9392103716’, 26, ‘{jntu, hyderbad}’), (4211, ‘vidharth’, ‘8309561236’, 16,  ‘nizambad’), (5612, ‘Abdul’, ‘8309561258’, 32,  ‘parkal’);
+INSERT INTO Student (Student id, name, Phone, age, address), VALUES ( 1233, â€˜poojeethaâ€™, â€˜9640525427â€™, 23, â€˜{hyderabad, karmanghat}â€™ ), (1234, â€˜ vineethâ€™,  â€˜9640527893â€™,  25, â€˜{hyderabad, madinaguda}â€™), (3122, â€˜matrupallyâ€™,  â€˜9392103716â€™, 26, â€˜{jntu, hyderbad}â€™), (4211, â€˜vidharthâ€™, â€˜8309561236â€™, 16,  â€˜nizambadâ€™), (5612, â€˜Abdulâ€™, â€˜8309561258â€™, 32,  â€˜parkalâ€™);
 
 --
 --Dumping data for table Courses
 --
 
 --
---INSERT INTO courses (id (Student_id), name, instructor, department), VALUES (1, ‘ poojeetha’, ‘rakshitha’, ‘ mech’), ( 2, ‘ vineeth’, ‘ vishnupriya’, ‘ datascience’), 3, ‘ matrupally’, ‘ venkatesh’, ‘CSC’ ), (4, ‘ vidharth’, ‘ Ahmed’, ‘ EEE’), ( 5, ‘ Abdul’, ‘ Vikas’, ‘ BA’)
+--INSERT INTO courses (id (Student_id), name, instructor, department), VALUES (1, â€˜ poojeethaâ€™, â€˜rakshithaâ€™, â€˜ mechâ€™), ( 2, â€˜ vineethâ€™, â€˜ vishnupriyaâ€™, â€˜ datascienceâ€™), 3, â€˜ matrupallyâ€™, â€˜ venkateshâ€™, â€˜CSCâ€™ ), (4, â€˜ vidharthâ€™, â€˜ Ahmedâ€™, â€˜ EEEâ€™), ( 5, â€˜ Abdulâ€™, â€˜ Vikasâ€™, â€˜ BAâ€™)
 --
 
 
@@ -17,14 +24,14 @@ INSERT INTO Student (Student id, name, Phone, age, address), VALUES ( 1233, ‘poo
 --Dumping data for table Instructors
 --
 
-INSERT INTO Instructors (id, name, email, office), VALUES (1233, ‘rakshitha’, ‘rakshitha@gmail.com’, Amazon), (3122, ‘venkatesh’, ‘venkatmadugula@gmail.com’, ‘TechM’), (1234, ‘vishnupriya’, ‘venvishnupriya@gmail.com’, ‘Amazon’), (4211, ‘Ahmed’, ‘Ahmed@gmail.com’, ‘TechM’), (5612, ‘vikas’, ‘vmatrupa@gmail.com’, ‘virtusa’)
+INSERT INTO Instructors (id, name, email, office), VALUES (1233, â€˜rakshithaâ€™, â€˜rakshitha@gmail.comâ€™, Amazon), (3122, â€˜venkateshâ€™, â€˜venkatmadugula@gmail.comâ€™, â€˜TechMâ€™), (1234, â€˜vishnupriyaâ€™, â€˜venvishnupriya@gmail.comâ€™, â€˜Amazonâ€™), (4211, â€˜Ahmedâ€™, â€˜Ahmed@gmail.comâ€™, â€˜TechMâ€™), (5612, â€˜vikasâ€™, â€˜vmatrupa@gmail.comâ€™, â€˜virtusaâ€™)
 
 --
 --Dumping data for table enrollments
 --
 
 
-INSERT INTO enrollments (id, Student_id, course_id, grade), VALUES (123456, 1233, 2, ‘A’), (223456, 1234, 1, ‘A’), (346245, 4211, 4, ‘B’), (545361, 3122, 3, ‘C’), (776563, 6612, 5, ‘F’)
+INSERT INTO enrollments (id, Student_id, course_id, grade), VALUES (123456, 1233, 2, â€˜Aâ€™), (223456, 1234, 1, â€˜Aâ€™), (346245, 4211, 4, â€˜Bâ€™), (545361, 3122, 3, â€˜Câ€™), (776563, 6612, 5, â€˜Fâ€™)
 
 
 
