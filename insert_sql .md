@@ -1,4 +1,13 @@
 --
+
+SELECT * FROM students;
+
+SELECT * FROM courses;
+
+SELECT * FROM instructors;
+
+SELECT * FROM enrollments;
+
 --Dumping data for table Student
 --
 
