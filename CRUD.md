@@ -8,62 +8,37 @@ SELECT * FROM enrollments;
 
 
 
-
-
--- 
--- Dumping data for table 'students'
+--
+--Dumping data for table Student
 --
 
-INSERT INTO students (id, name, phone, age, address)
-VALUES (1, 'John Doe', '555-123-4567', 18, '123 Main Street'),
-       (2, 'Jane Smith', '555-555-5555', 20, '456 Elm Street'),
-       (3, 'Bob Johnson', '555-987-6543', 19, '789 Oak Avenue'),
-       (4, 'Sarah Lee', '555-555-1212', 21, '321 Maple Drive'),
-       (5, 'Tom Jones', '555-444-3333', 22, '654 Pine Street Apt. 2B');
+INSERT INTO Student (Student id, name, Phone, age, address), VALUES ( 1233, ‘poojeetha’, ‘9640525427’, 23, ‘{hyderabad, karmanghat}’ ), (1234, ‘ vineeth’,  ‘9640527893’,  25, ‘{hyderabad, madinaguda}’), (3122, ‘matrupally’,  ‘9392103716’, 26, ‘{jntu, hyderbad}’), (4211, ‘vidharth’, ‘8309561236’, 16,  ‘nizambad’), (5612, ‘Abdul’, ‘8309561258’, 32,  ‘parkal’);
 
-
--- -------------------------------------------------------------
--- 
--- Dumping data for table 'courses'
+--
+--Dumping data for table Courses
 --
 
-INSERT INTO courses (id, name, instructor, department)
-VALUES (1, 'Introduction to Physics', 'Dr. Smith', 'Physics'),
-       (2, 'Calculus I', 'Prof. Johnson', 'Mathematics'),
-       (3, 'Intro to Computer Science', 'Prof. Lee', 'Computer Science'),
-       (4, 'American Literature', 'Dr. Brown', 'English'),
-       (5, 'Organic Chemistry', 'Prof. Kim', 'Chemistry');
+
+INSERT INTO courses (id (Student_id), name, instructor, department), VALUES (1, ‘ poojeetha’, ‘rakshitha’, ‘ mech’), ( 2, ‘ vineeth’, ‘ vishnupriya’, ‘ datascience’), 3, ‘ matrupally’, ‘ venkatesh’, ‘CSC’ ), (4, ‘ vidharth’, ‘ Ahmed’, ‘ EEE’), ( 5, ‘ Abdul’, ‘ Vikas’, ‘ BA’)
 
 
--- 
--- Dumping data for table 'instructors'
+
+--
+--Dumping data for table Instructors
 --
 
-INSERT INTO instructors (id, name, email, office)
-VALUES (1, 'Dr. Smith', 'drsmith@university.edu', 'Science Building, Room 101'),
-       (2, 'Prof. Johnson', 'pjohnson@university.edu', 'Math Building, Room 203'),
-       (3, 'Prof. Lee', 'plee@university.edu', 'Computer Science Building, Room 304'),
-       (4, 'Dr. Brown', 'dbrown@university.edu', 'Humanities Building, Room 102'),
-       (5, 'Prof. Kim', 'pkim@university.edu', 'Science Building, Room 205');
+INSERT INTO Instructors (id, name, email, office), VALUES (1233, ‘rakshitha’, ‘rakshitha@gmail.com’, Amazon), (3122, ‘venkatesh’, ‘venkatmadugula@gmail.com’, ‘TechM’), (1234, ‘vishnupriya’, ‘venvishnupriya@gmail.com’, ‘Amazon’), (4211, ‘Ahmed’, ‘Ahmed@gmail.com’, ‘TechM’), (5612, ‘vikas’, ‘vmatrupa@gmail.com’, ‘virtusa’)
 
-
--- 
--- Dumping data for table 'enrollments'
+--
+--Dumping data for table enrollments
 --
 
-CREATE TABLE enrollment (
-    id INT PRIMARY KEY,
-    student_id INT,
-    course_id INT,
-    grade INT
-);
 
-INSERT INTO enrollment (id, student_id, course_id, grade)
-VALUES (1, 101, 1, 90),
-       (2, 102, 2, 85),
-       (3, 103, 1, 95),
-       (4, 104, 3, 80),
-       (5, 105, 4, 92);
+INSERT INTO enrollments (id, Student_id, course_id, grade), VALUES (123456, 1233, 2, ‘A’), (223456, 1234, 1, ‘A’), (346245, 4211, 4, ‘B’), (545361, 3122, 3, ‘C’), (776563, 6612, 5, ‘F’)
+
+
+
+
 
 
 delete from students where id=1;
