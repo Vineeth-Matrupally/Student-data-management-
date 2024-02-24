@@ -1,5 +1,5 @@
 
---CS665_Project1 Group
+-Student data management
 
 
 --Link to Project Repository: https://github.com/Vineeth-Matrupally/DBMS-Project- 
