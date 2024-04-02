@@ -1,5 +1,5 @@
 
--Student data management
+-Student database management
 
 
 --Link to Project Repository: https://github.com/Vineeth-Matrupally/DBMS-Project- 
